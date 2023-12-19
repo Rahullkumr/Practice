@@ -1,14 +1,18 @@
-# write a python class that finds the age of a person.
-
 import datetime
-class Umar:
-    def __init__(self):
-        self.current_year = datetime.datetime.now().year        
 
-    def display(self, yob):
-        self.age = self.current_year - yob
+
+class Age:
+    def __init__(self):
+        self.current_year = datetime.datetime.now().year
+
+
+    def find_age(self,yob):
+        self.year_of_birth=yob
+        self.age = self.current_year - self.year_of_birth
         print(self.age)
 
-birth_year = int(input("Enter birth year: "))
-umar = Umar()
-umar.display(birth_year)
+
+
+year_of_birth = int(input("Enter birth year"))
+a=Age()
+a.find_age(year_of_birth)
