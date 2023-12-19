@@ -13,3 +13,8 @@ Python Practice repository
 ## Encapsulation
 
 - class and object
+  ```python
+    class Customer:
+          print("inside class")
+    obj = Customer()
+  ```
