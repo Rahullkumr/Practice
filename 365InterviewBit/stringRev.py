@@ -8,7 +8,6 @@ NOTE:
 - If there are multiple spaces between words, reduce them to a single space in the reversed string.
 '''
 
-
 def solve(A):
     B = A.strip()
     rev_list = B.split()[::-1]
@@ -18,4 +17,11 @@ def solve(A):
         rev_str += ' '
     print(rev_str.strip())
 
+def solve_my_way(A):
+    B = A.strip()
+    rev_list = B.split()[::-1]
+    rev_str = ' '.join(rev_list)
+    print(rev_str.strip())
+
+solve_my_way("The sky is blue")
 solve("The sky is blue")
